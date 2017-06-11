@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+   
+    <title>Bootstrap Forms</title>
+
+    <!-- Bootstrap -->
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/customStyle.css" rel="stylesheet">
+      </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">     
+        <br/>
+          <form>   
+            <div class="form-group has-warning">
+              <label for="inputUserName" class="control-label">Username</label>
+              <input class="form-control" placeholder="user name" type="text" id="inputUserName"><span class="help-block">Invalid format</span>
+            </div>
+            <div class="form-group has-success">
+              <label for="inputPassword" class="control-label">Password</label>
+              <input class="form-control" type="text" id="inputPassword">
+              <span class="help-block">Strong Password</span>
+            </div>
+            <button type="submit" class="btn btn-default">Login</button>
+          </form> 
+
+          <hr/>
+          <br/>
+          <form>   
+            
+            
+              <div class="form-group has-success has-feedback">                
+                <label for="inputUserName" class="control-label">Income</label>
+                <div class="input-group">
+                  <span class="input-group-addon">£</span>                
+                  <input class="form-control" placeholder="user name" type="text" id="inputUserName">
+                </div>
+                <span class="glyphicon glyphicon-ok form-control-feedback"></span><span class="help-block">all ok</span>              
+            </div>            
+            <div class="form-group has-warning has-feedback">
+              <label for="Age" class="control-label">Age</label>
+              <input class="form-control" placeholder="age" type="text" id="age"><span class="glyphicon glyphicon-warning-sign form-control-feedback"></span>
+              <span class="help-block">Invalid format</span>
+            </div>
+            <div class="form-group has-error has-feedback">
+              <label for="inputPassword" class="control-label">Password</label>
+              <input class="form-control" type="text" id="inputPassword">
+              <span class="glyphicon glyphicon-remove form-control-feedback"></span><span class="help-block"></span>
+              <span class="help-block">Not Strong Password</span>
+            </div>
+            <button type="submit" class="btn btn-default">Login</button>
+          </form>        
+        </div>        
+    </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

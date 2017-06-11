@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+   
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/costum.css" rel="stylesheet">
+    <style>
+      body{
+        padding-top: 50px;
+      }
+    </style>
+      </head>
+  <body>
+  <!--
+    Important!! The collapse function not working straight on page load by default!
+    The panel body needs an additional class to make it work "collapse in". With out in the panel body will be hidden. With in it will be visible on page load.
+  -->
+    <div class="container">
+    <div class="row">
+
+      <div class="panel panel-default">
+        
+        <div class="panel-heading">      
+          <!--
+          This is one way to have buttons for collapse
+          <a class="btn btn-primary" href="#imageGallery" data-toggle="collapse">Toggle image galery</a>
+          
+          Button element can be used instead of <a> but in button data-target has to be specified!
+          
+          <button class="btn btn-primary" data-target="#imageGallery" data-toggle="collapse">Toggle with button</button>
+          -->
+          <button class="btn btn-primary" id="toggleButton">Toggle</button>
+          <button class="btn btn-primary" id="hideButton">Hide</button>
+          <button class="btn btn-primary" id="showButton">Show</button>
+        </div>
+
+        <div class="panel-body collapse in" id="imageGallery">
+          <div class="col-lg-12">
+            <h3>Simple galery</h3>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <a href="img/Chrysanthemum.jpg" class="thumbnail">
+              <p>Chrysanthemum</p>
+              <img src="img/Chrysanthemum.jpg">
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <a href="img/Desert.jpg" class="thumbnail">
+              <p>Chrysanthemum</p>
+              <img src="img/Desert.jpg">
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <a href="img/Hydrangeas.jpg" class="thumbnail">
+              <p>Chrysanthemum</p>
+              <img src="img/Hydrangeas.jpg">
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <a href="img/Jellyfish.jpg" class="thumbnail">
+              <p>Chrysanthemum</p>
+              <img src="img/Jellyfish.jpg">
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <a href="img/Koala.jpg" class="thumbnail">
+              <p>Chrysanthemum</p>
+              <img src="img/Koala.jpg">
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <a href="img/Lighthouse.jpg" class="thumbnail">
+              <p>Chrysanthemum</p>
+              <img src="img/Lighthouse.jpg">
+            </a>
+          </div>
+         </div> 
+
+        </div>
+      
+      </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <!--
+      This is only necessery if u one to use the buttons differently
+    -->
+    <script type="text/javascript">
+
+      $(document).ready(function (){
+
+        $('#toggleButton').click(function(){
+          $('#imageGallery').collapse('toggle');
+        });
+
+        $('#hideButton').click(function(){
+          $('#imageGallery').collapse('hide');
+        });
+
+        $('#showButton').click(function(){
+          $('#imageGallery').collapse('show');
+        });
+
+        //these method will be called imediately after the above events performed (button click)
+        $('#imageGallery').on('show.bs.collapse', function(){
+          //do something here before the show executes
+        });
+
+        $('#imageGallery').on('shown.bs.collapse', function(){
+          //do something here imidiately after the galery expanded
+        });
+
+        $('#imageGallery').on('hide.bs.collapse', function(){
+          //do something here imidiately after the hide event called
+        });
+
+      });
+
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+   
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <style>
+    body{
+      padding-top: 50px;
+    }
+    </style>
+
+      </head>
+      
+  <body>
+     <div class="container">     
+       <div class="col-xs-12">
+
+         <ul class="nav nav-tabs">
+            <li class="active">
+              <a href="#homeTab" data-toggle="tab">Home</a>
+            </li>
+            <li>
+              <a href="#aboutTab" data-toggle="tab">About</a>
+            </li>
+            <li class="dropdown">
+              <a href="#" data-toggle="dropdown" class="dropdown-toggle">Locations
+              <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="#indiaTab" data-toggle="tab">India</a>
+                </li>
+                <li>
+                  <a href="#usaTab" data-toggle="tab">USA</a>
+                </li>
+              </ul>
+            </li>
+         </ul>
+
+         <div class="tab-content">
+          <div id="homeTab" class="tab-pane active fade in">
+            <h3>Home Page</h3>
+            <p>Home page content</p>
+          </div>
+          <div id="aboutTab" class="tab-pane fade">
+            <h3>About Page</h3>
+            <p>About page content</p>
+          </div>
+          <div id="indiaTab" class="tab-pane fade">
+            <h3>India Page</h3>
+            <p>India page content</p>
+          </div>
+          <div id="usaTab" class="tab-pane fade">
+            <h3>USA Page</h3>
+            <p>USA page content</p>
+          </div>
+         </div>
+
+
+       </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

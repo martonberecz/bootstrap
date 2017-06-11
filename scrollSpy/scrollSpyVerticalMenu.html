@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+   
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <style type="text/css">
+        body {
+            position: relative;
+        }
+
+        #mainNavbar {
+            top: 20px;
+            position: fixed;
+        }
+    </style>
+      </head>
+  <body>
+  <div class="container">
+        <div class="row">
+            <div class="col-xs-3">
+                <nav id="mainNavbar">
+                    <ul class="nav nav-pills nav-stacked">
+                        <li class="active"><a href="#divDesert">Desert</a></li>
+                        <li><a href="#divLighthouse">Lighthouse</a></li>
+                        <li><a href="#divTulips">Tulips</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                Animals <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#divJellyfish">Jellyfish</a></li>
+                                <li><a href="#divPenguins">Penguins</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </nav>
+            </div>
+            <div class="col-xs-9">
+                <div id="divDesert">
+                    <h1>Desert</h1>
+                    <img src="../image/img/Desert.jpg" class="img-responsive" />
+                </div>
+
+                <div id="divLighthouse">
+                    <h1>Lighthouse</h1>
+                    <img src="../image/img/Lighthouse.jpg" class="img-responsive" />
+                </div>
+
+                <div id="divTulips">
+                    <h1>Tulips</h1>
+                    <img src="../image/img/Tulips.jpg" class="img-responsive" />
+                </div>
+
+                <div id="divJellyfish">
+                    <h1>Jellyfish</h1>
+                    <img src="../image/img/Jellyfish.jpg" class="img-responsive" />
+                </div>
+
+                <div id="divPenguins">
+                    <h1>Penguins</h1>
+                    <img src="../image/img/Penguins.jpg" class="img-responsive" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+    //look for afix in this is not good enough
+        $(document).ready(function () {
+            $('body').scrollspy({
+                target: '#mainNavbar',
+                offset: 10
+            });
+        });
+    </script>
+  </body>
+</html>

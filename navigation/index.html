@@ -17,15 +17,63 @@
 
       <div class="row">
         <div class="col-xs-12">
-        <a class="dropdown-toggle" data-toggle="dropdown" data-id="first"><!-- data-toggle="dropdown"to show or hide the menu-->
-          Dropdown <span class="caret"></span>
-          <ul class="dropdown-menu">
-          <li><a href="#">Action 1</a></li>
-          <li><a href="#">Action 2</a></li>
-          <li><a href="#">Action 2</a></li>
-          <li><a href="#">Action 2</a></li>
-          </ul>
-        </a>
+
+          <form>
+            <ul class="nav nav-tabs">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+              </ul> 
+          </form>
+
+          <br/>
+          <form>    
+             <ul class="nav nav-pills">
+              <li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+              </ul>             
+          </form>
+
+          <br/>
+          <form>    
+             <ul class="nav nav-pills nav-stacked">
+              <li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+              </ul>             
+          </form>
+
+          <br/>
+          <form>    
+             <ul class="nav nav-pills">
+              <li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+              <li><a href="#">Contact</a></li>              
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  <span class="glyphicon glyphicon-info-sign"></span>
+                  About <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action 1</a></li>
+                  <li><a href="#">Action 2</a></li>
+                  <li><a href="#">Action 2</a></li>
+                  <li><a href="#">Action 2</a></li>
+                </ul>
+              </li>
+              </ul>             
+          </form>
+
+          <hr/>
+            <a class="dropdown-toggle" data-toggle="dropdown" data-id="first"><!-- data-toggle="dropdown"to show or hide the menu-->
+              Dropdown <span class="caret"></span>
+              <ul class="dropdown-menu">
+              <li><a href="#">Action 1</a></li>
+              <li><a href="#">Action 2</a></li>
+              <li><a href="#">Action 2</a></li>
+              <li><a href="#">Action 2</a></li>
+              </ul>
+            </a>
 
         <hr/>
         <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" data-id="second">
@@ -77,6 +125,68 @@
             </ul>
           </div>
 
+          <hr/>
+          <form class="form-inline">  
+          <div class="form-group">
+            <div class="input-group">
+              <input type="text" class="form-control input-sm">
+              <span class="input-group-btn">
+              <button class="btn btn-default  btn-sm">Search</button>
+              </span>
+            </div>            
+          </form>
+
+          <hr/>
+          <form class="form-inline">  
+          <div class="form-group">
+            <div class="input-group">
+              <input type="text" class="form-control input-sm">
+              <span class="input-group-btn">
+                <button class="btn btn-default dropdown-toggle btn-sm" data-toggle="dropdown">Dropdown 
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action 1</a></li>
+                  <li><a href="#">Action 2</a></li>
+                  <li><a href="#">Action 2</a></li>          
+                </ul>              
+              </span>
+            </div>            
+          </form>
+
+          <hr/>
+          <form class="form-inline">
+              <div class="input-group">
+                <input type="text" class="form-control">  
+                  <div class="input-group-btn">           
+                    <button class="btn btn-default">Cut</button>
+                    <button class="btn btn-default">Copy</button>
+                    <button class="btn btn-default">Paste</button>
+                  </div>
+              </div>            
+          </form>
+
+          <hr/>
+          <form class="form-inline">
+              <div class="input-group">
+                <input type="text" class="form-control">  
+                  <div class="input-group-btn">           
+                    <button class="btn btn-default">
+                    <span class="glyphicon glyphicon-align-left"></span>
+                    </button>
+                    <button class="btn btn-default">
+                      <span class="glyphicon glyphicon-align-center"></span>
+                    </button>
+                    <button class="btn btn-default">
+                      <span class="glyphicon glyphicon-align-right"></span>
+                    </button>
+                  </div>
+              </div>            
+          </form>
+          <br/>
+          <button class="btn btn-primary">Inbox <span class="badge">10</span></button>
+          <button class="btn btn-danger">Something <span class="badge">4</span></button>
+          <button class="btn btn-warning">That's all you have <span class="badge">17</span></button>
       </div>        
     </div>
 
